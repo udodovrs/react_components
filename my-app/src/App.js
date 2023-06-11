@@ -1,27 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
 export const App = () => {
-	return (
-  	<div className="App"> {/*декларативный*/}
-			<header className="App-header"> {/*декларативный*/}
-				<img src={logo} className="App-logo" alt="logo" /> {/*декларативный*/}
-				<p> {/*декларативный*/}
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				> {/*декларативный*/}
-					Learn React
-				</a>
-				<p> {/*декларативный*/}
-					{new Date().getFullYear().toString()} {/*императивный*/}
-				</p>
-			</header>
-		</div>
-	);
-}
-
+  return /*#__PURE__*/React.createElement("div", {
+    className: "App"
+  }, /*#__PURE__*/React.createElement("header", {
+    className: "App-header"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: logo,
+    className: "App-logo",
+    alt: "logo"
+  }), /*#__PURE__*/React.createElement("p", null, "Edit ", /*#__PURE__*/React.createElement("code", null, "src/App.js"), " and save to reload."), /*#__PURE__*/React.createElement("a", {
+    className: "App-link",
+    href: "https://reactjs.org",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, "Learn React"), /*#__PURE__*/React.createElement("p", null, new Date().getFullYear())));
+};
